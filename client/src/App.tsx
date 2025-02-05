@@ -50,7 +50,7 @@ const App = () => {
     try {
       setLoading(true);
 
-      const response = await fetch('https://ai-image-generator-server.vercel.app/openai/generateimage', {
+      const response = await fetch('http://localhost:8000/openai/generateimage', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
